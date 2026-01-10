@@ -12,10 +12,9 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      <footer className="py-8 px-4 text-center text-neutral-500 border-t border-neutral-800">
-        <p>© 2024 Kartik Kumar. All rights reserved.</p>
-      </footer>
     </main>
   );
 }
+
+
 

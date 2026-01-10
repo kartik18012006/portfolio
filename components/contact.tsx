@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export default function Contact() {
@@ -73,34 +73,6 @@ export default function Contact() {
             );
           })}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-neutral-400 mb-4">Connect with me on</p>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-neutral-800 hover:bg-neutral-700 transition-colors text-neutral-300 hover:text-white"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-neutral-800 hover:bg-neutral-700 transition-colors text-neutral-300 hover:text-white"
-            >
-              <Linkedin size={24} />
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
