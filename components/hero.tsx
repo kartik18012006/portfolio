@@ -23,18 +23,18 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-4">
-                Kartik Kumar
+                DEV HOOD
               </h1>
               <p className="text-xl md:text-2xl text-neutral-300 mb-2">
-                B.Tech AI-DS Student
+                Custom App & Web Development Agency
               </p>
               <p className="text-lg text-neutral-400 mb-6">
-                GGSIPU EDC | 2024-2028
+                Transforming Ideas Into Digital Reality
               </p>
               <p className="text-neutral-300 max-w-lg leading-relaxed">
-                Passionate about web and app development. Building innovative solutions
-                with React, Node.js, and Flutter. Exploring the intersection of
-                Artificial Intelligence and Data Science.
+                We specialize in building custom web applications and mobile apps
+                that drive business growth. From concept to deployment, we deliver
+                innovative solutions tailored to your unique needs.
               </p>
             </motion.div>
           </div>

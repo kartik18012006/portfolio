@@ -6,16 +6,16 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    name: "The Guruji Classes",
+    name: "E-Learning Platform",
     description:
-      "An educational platform designed to provide quality learning resources and courses. Built with modern web technologies to deliver an engaging learning experience.",
+      "A comprehensive educational platform designed to provide quality learning resources and courses. Built with modern web technologies to deliver an engaging learning experience for students and educators.",
     url: "https://thegurujiclasses.vercel.app/",
     technologies: ["React", "Node.js"],
   },
   {
-    name: "Growth Buddy",
+    name: "Growth Tracking App",
     description:
-      "A web application focused on personal development and growth tracking. Helps users set goals, track progress, and achieve their personal and professional milestones.",
+      "A web application focused on personal development and growth tracking. Helps users set goals, track progress, and achieve their personal and professional milestones with intuitive analytics.",
     url: "https://growth-buddy-iota.vercel.app/",
     technologies: ["React", "Node.js"],
   },
@@ -33,7 +33,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-4">
-            My Projects
+            Our Portfolio
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neutral-600 to-neutral-400 mx-auto"></div>
         </motion.div>

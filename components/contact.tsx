@@ -34,8 +34,8 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-neutral-300 text-lg mb-8">
-            I&apos;m always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
+            Ready to bring your idea to life? We&apos;re always open to discussing
+            new projects and opportunities. Let&apos;s build something amazing together.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-neutral-600 to-neutral-400 mx-auto"></div>
         </motion.div>

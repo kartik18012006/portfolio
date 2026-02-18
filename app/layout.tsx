@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kartik Kumar - Portfolio",
-  description: "B.Tech AI-DS Student | Web & App Developer | React, Node.js, Flutter",
+  title: "DEV HOOD - Custom App & Web Development Agency",
+  description: "Custom app and web development agency. We build innovative web applications and mobile apps tailored to your business needs.",
 };
 
 export default function RootLayout({
