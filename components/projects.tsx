@@ -93,23 +93,20 @@ function ImageCard({ image, index }: { image: { name: string; src: string }; ind
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group relative w-full"
     >
-      <div className="relative rounded-xl border border-neutral-800/80 bg-gradient-to-b from-neutral-900/40 via-neutral-900/20 to-black/40 backdrop-blur-sm transition-all duration-300 hover:border-neutral-700/80 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1">
+      <div className="relative rounded-xl border border-neutral-800/80 bg-gradient-to-b from-neutral-900/40 via-neutral-900/20 to-black/40 backdrop-blur-sm transition-all duration-300 hover:border-neutral-700/80 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1 overflow-hidden">
         {/* Hover glow effect */}
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-neutral-800/0 via-neutral-700/0 to-neutral-800/0 group-hover:from-neutral-800/20 group-hover:via-neutral-700/10 group-hover:to-neutral-800/20 transition-all duration-300 opacity-0 group-hover:opacity-100 pointer-events-none z-10"></div>
         
-        <div className="relative w-full p-4 flex items-center justify-center bg-black/20 min-h-[400px]">
-          <div className="relative w-full h-full flex items-center justify-center">
-            <Image
-              src={image.src}
-              alt={image.name}
-              width={1200}
-              height={800}
-              className="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              quality={100}
-              priority={index < 3}
-            />
-          </div>
+        <div className="relative w-full aspect-[4/3]">
+          <Image
+            src={image.src}
+            alt={image.name}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            quality={100}
+            priority={index < 3}
+          />
         </div>
       </div>
     </motion.div>
