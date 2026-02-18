@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Smartphone, Globe } from "lucide-react";
+import Image from "next/image";
 
 const webProjects = [
   {
@@ -20,21 +21,12 @@ const webProjects = [
   },
 ];
 
-const appProjects = [
-  {
-    name: "Fitness Tracker",
-    description:
-      "A cross-platform mobile application for tracking workouts, nutrition, and fitness goals. Features real-time progress monitoring, personalized workout plans, and social sharing capabilities.",
-    url: "#",
-    technologies: ["Flutter", "Firebase", "Dart"],
-  },
-  {
-    name: "E-Commerce Mobile App",
-    description:
-      "A feature-rich mobile shopping experience with seamless checkout, order tracking, and personalized recommendations. Built for both iOS and Android with native performance.",
-    url: "#",
-    technologies: ["React Native", "Node.js", "Stripe"],
-  },
+const appImages = [
+  { name: "dating1", src: "/assets/dating1.png" },
+  { name: "dating2", src: "/assets/dating2.png" },
+  { name: "community", src: "/assets/community.png" },
+  { name: "fintech", src: "/assets/fintech.png" },
+  { name: "homeserivce", src: "/assets/homeserivce.png" },
 ];
 
 function DisplayCard({ project, index }: { project: typeof webProjects[0]; index: number }) {
@@ -88,6 +80,33 @@ function DisplayCard({ project, index }: { project: typeof webProjects[0]; index
           </div>
         </div>
       </a>
+    </motion.div>
+  );
+}
+
+function ImageCard({ image, index }: { image: { name: string; src: string }; index: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="group relative"
+    >
+      <div className="relative overflow-hidden rounded-xl border border-neutral-800/80 bg-gradient-to-b from-neutral-900/40 via-neutral-900/20 to-black/40 backdrop-blur-sm transition-all duration-300 hover:border-neutral-700/80 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1">
+        {/* Hover glow effect */}
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-neutral-800/0 via-neutral-700/0 to-neutral-800/0 group-hover:from-neutral-800/20 group-hover:via-neutral-700/10 group-hover:to-neutral-800/20 transition-all duration-300 opacity-0 group-hover:opacity-100 pointer-events-none z-10"></div>
+        
+        <div className="relative aspect-[4/3] w-full">
+          <Image
+            src={image.src}
+            alt={image.name}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        </div>
+      </div>
     </motion.div>
   );
 }
@@ -147,9 +166,9 @@ export default function Projects() {
               App Development
             </h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {appProjects.map((project, index) => (
-              <DisplayCard key={project.name} project={project} index={index} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {appImages.map((image, index) => (
+              <ImageCard key={image.name} image={image} index={index} />
             ))}
           </div>
         </motion.div>
