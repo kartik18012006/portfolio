@@ -128,35 +128,13 @@ export default function Projects() {
           <div className="w-24 h-1 bg-gradient-to-r from-neutral-600 to-neutral-400 mx-auto"></div>
         </motion.div>
 
-        {/* Web Development Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-20"
-        >
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 rounded-lg bg-neutral-800/50 border border-neutral-700/50">
-              <Globe className="text-neutral-300" size={24} />
-            </div>
-            <h3 className="text-2xl md:text-3xl font-semibold text-neutral-50">
-              Web Development
-            </h3>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {webProjects.map((project, index) => (
-              <DisplayCard key={project.name} project={project} index={index} />
-            ))}
-          </div>
-        </motion.div>
-
         {/* App Development Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="mb-20"
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="p-2 rounded-lg bg-neutral-800/50 border border-neutral-700/50">
@@ -169,6 +147,28 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {appImages.map((image, index) => (
               <ImageCard key={image.name} image={image} index={index} />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Web Development Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-800/50 border border-neutral-700/50">
+              <Globe className="text-neutral-300" size={24} />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-semibold text-neutral-50">
+              Web Development
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {webProjects.map((project, index) => (
+              <DisplayCard key={project.name} project={project} index={index} />
             ))}
           </div>
         </motion.div>
