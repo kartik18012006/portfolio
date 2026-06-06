@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DEV HOOD - Custom App & Web Development Agency",
-  description: "Custom app and web development agency. We build innovative web applications and mobile apps tailored to your business needs.",
+  title: "Kartik Kumar",
+  description: "I’m Kartik Kumar, an App and Web Developer passionate about building modern, user-friendly digital experiences. I specialize in creating responsive web applications and scalable solutions while continuously exploring AI, Data Science, and emerging technologies",
 };
 
 export default function RootLayout({

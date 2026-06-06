@@ -45,7 +45,7 @@ export default function About() {
                   <span className="font-semibold">Custom Development</span>
                 </p>
                 <p className="text-neutral-400">
-                  We build tailored solutions for businesses of all sizes
+                  I build tailored solutions for businesses of all sizes
                 </p>
                 <p className="text-neutral-400">From startups to enterprises</p>
               </div>
@@ -87,21 +87,13 @@ export default function About() {
               Who We Are
             </h3>
             <p className="text-neutral-300 leading-relaxed mb-4">
-              DEV HOOD is a custom app and web development agency dedicated to
-              transforming your ideas into powerful digital solutions. We combine
-              cutting-edge technology with creative problem-solving to deliver
-              exceptional results.
+            Hi, I’m Kartik Kumar — an App & Web Developer and AI & Data Science student. I create modern web applications, explore data-driven solutions, and enjoy building products that combine great user experiences with practical functionality.
             </p>
             <p className="text-neutral-300 leading-relaxed mb-4">
-              Our team specializes in building modern web applications and mobile apps
-              using the latest technologies. We work closely with our clients to
-              understand their unique needs and deliver custom solutions that drive
-              business growth and success.
+              
             </p>
             <p className="text-neutral-300 leading-relaxed">
-              From initial concept to final deployment, we handle every aspect of
-              the development process, ensuring your project is delivered on time,
-              within budget, and exceeds expectations.
+              
             </p>
           </motion.div>
         </div>
