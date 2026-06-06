@@ -84,7 +84,7 @@ export default function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-neutral-50 mb-4">
-              Who We Are
+              WHO I AM
             </h3>
             <p className="text-neutral-300 leading-relaxed mb-4">
             Hi, I’m Kartik Kumar — an App & Web Developer and AI & Data Science student. I create modern web applications, explore data-driven solutions, and enjoy building products that combine great user experiences with practical functionality.
